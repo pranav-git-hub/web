@@ -24,28 +24,26 @@
                 <li><a href="#one_one">Projects</a></li>
                 <li><a href="#three">Get in touch</a></li>
                 <li>
-                    <audio autoplay controls src="audio/fly_with_me.mp3"
-                           type="audio/mp3" hidden id="FlyAwayWithMe"></audio>
+                    <audio src="audio/fly_with_me.mp3" type="audio/mp3" hidden id="FlyAwayWithMe">
+                    </audio>
                 </li>
 
-                <button id="playAudio">Pause Music</button>
+                <button id="playAudio">Play Music</button>
                 <script type="text/javascript">
                 document.getElementById("playAudio").addEventListener("click", function(){
                     var audio = document.getElementById('FlyAwayWithMe');
 
-                    if(this.className == ""){
-                        this.className = "is-playing";
+                    if(this.className == "is-playing"){
+                        this.className = "";
                         this.innerHTML = "Play Music"
                         audio.pause();
                     }
                     else{
-                        this.className = "";
+                        this.className = "is-playing";
                         this.innerHTML = "Pause Music";
                         audio.play();
                     }
                 });
-
-
 
                 </script>
             </ul>
@@ -60,7 +58,8 @@
     <section class="wrapper style1 fullscreen fade-up" id="intro">
         <div class="inner">
             <h1>Pranav Arvind Bhile</h1>
-            <p>Highly motivated Data Science and Data Analysis enthusiast with a demonstrated history of working in the information
+            <p>Highly motivated Data Science and Data Analysis enthusiast with a demonstrated history of working in the
+                information
                 technology and service industry. Passionate about data and committed to astute problem-solving by
                 incorporating critical cognitive abilities. </p>
             <p>An inquisitive person, able to learn new languages and
@@ -84,12 +83,13 @@
             <div class="content">
                 <div class="inner">
                     <h2>CoreCompete (Accenture AI)</h2>
-                    <p>Data Science Intern at CoreCompete, a multi-national leader in Cloud Analytics and part of the
+                    <p>Data Engineering Intern at CoreCompete, a multi-national leader in Cloud Analytics merged with
                         Accenture Applied Intelligence (AI) team.</p>
-                    <p>
-                        Worked in creating Databases by interlinking and using technologies like PostgreSQL, Python and
-                        GCP.
-                    </p>
+                    <p>Worked on grouping data, making tables based on utility analysis. Employed Jupyter notebook to
+                        upload big data to GCP through PostgreSQL server.</p>
+                    <p>Implemented SQL queries to inspect data. Used Python’s Pandas, NumPy, and Matplotlib libraries to
+                        clean, plot, and analyze the data.</p>
+                    <p>Did quality assurance and submitted the analysis in the form of presentations.</p>
 
                     <ul class="actions">
                         <li><a class="button" href="https://www.linkedin.com/company/corecompete/">Company LinkedIn</a>
@@ -104,11 +104,9 @@
             <div class="content">
                 <div class="inner">
                     <h2>Klinik Everywhere</h2>
-                    <p>
-                        Software Developer Intern at Klinik Everywhere. A startup by Ex-Global Lead Managing Director in
-                        Accenture.</p>
-                    <p>
-                        Worked in building the TeleCare Android Application. TeleCare acts as a high quality medium of
+                    <p>Software Developer Intern at KlinikEverywhere. A startup by an Ex-Global Lead Managing
+                        Director.</p>
+                    <p>Worked on building the TeleCare Android Application. TeleCare acts as a high-quality medium of
                         communication between doctors and patients.
                     </p>
                     <ul class="actions">
@@ -131,13 +129,7 @@
                     <span class="icon solid major fa-award"></span>
                     <h3>Hiroshima University, Japan</h3>
                     <h5>Special Auditing Student</h5>
-                    <p>Advanced technology practical applications.</p>
-                </section>
-                <section>
-                    <span class="icon solid major fa-award"></span>
-                    <h3>Malware Analysis and Detection using Machine Learning</h3>
-                    <h5>Research Paper</h5>
-                    <p>Ongoing under Dr. Hemant Rathore.</p>
+                    <p>Data Science Approach for Sustainable Energy.</p>
                 </section>
                 <section>
                     <span class="icon solid major fa-award"></span>
@@ -167,7 +159,7 @@
     <section class="wrapper style1-alt" id="two">
         <div class="inner">
             <h2>Certifications</h2>
-            <p>Contact for verification ID</p>
+            <p>Contact for verification ID and certificate copies</p>
             <div class="features">
 
                 <section>
