@@ -4,10 +4,10 @@
 <head>
     <title>Pranav Arvind Bhile</title>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <link href="assets/css/main.css" rel="stylesheet"/>
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
+        <link href="assets/css/noscript.css" rel="stylesheet"/>
     </noscript>
 </head>
 <body class="is-preload">
@@ -21,8 +21,45 @@
                 <li><a href="#four">Work Experience</a></li>
                 <li><a href="#five">Achievements</a></li>
                 <li><a href="#two">Certifications</a></li>
-                <li><a href="#one">Projects</a></li>
+                <li><a href="#one_one">Projects</a></li>
                 <li><a href="#three">Get in touch</a></li>
+                <li>
+                    <audio autoplay controls src="audio/fly_with_me.mp3"
+                           type="audio/mp3" hidden id="FlyAwayWithMe"></audio>
+                </li>
+
+                <button id="playAudio">Pause Music</button>
+                <script type="text/javascript">
+                document.getElementById("playAudio").addEventListener("click", function(){
+                    var audio = document.getElementById('FlyAwayWithMe');
+
+                    if(this.className == ""){
+                        this.className = "is-playing";
+                        this.innerHTML = "Play Music"
+                        audio.pause();
+                    }
+                    else{
+                        this.className = "";
+                        this.innerHTML = "Pause Music";
+                        audio.play();
+                    }
+                });
+
+
+<!--                    if(this.className == 'is-playing'){-->
+<!--                        this.className = "";-->
+<!--                        this.innerHTML = "Play Music"-->
+<!--                        audio.pause();-->
+<!--                    }-->
+<!--                    else{-->
+<!--                        this.className = "is-playing";-->
+<!--                        this.innerHTML = "Pause Music";-->
+<!--                        audio.play();-->
+<!--                    }-->
+
+
+
+                </script>
             </ul>
         </nav>
     </div>
@@ -32,7 +69,7 @@
 <div id="wrapper">
 
     <!-- Intro -->
-    <section id="intro" class="wrapper style1 fullscreen fade-up">
+    <section class="wrapper style1 fullscreen fade-up" id="intro">
         <div class="inner">
             <h1>Pranav Arvind Bhile</h1>
             <p>Highly motivated Data Science enthusiast with a demonstrated history of working in the information
@@ -42,19 +79,20 @@
                 code structures quickly and efficiently. Seeking to use technical and analytical skills to change
                 people's lives. Skilled in Python, SQL, C++, GCP, R, Java, Statistics, Quality Assurance, GCP,
                 and Version Control.</p>
+
             <ul class="icons">
-                <li><a href="https://github.com/pranav-git-hub" class="icon brands fa-github"><span
+                <li><a class="icon brands fa-github" href="https://github.com/pranav-git-hub"><span
                         class="label">GitHub</span></a></li>
-                <li><a href="https://www.linkedin.com/in/pranavbhile/" class="icon brands fa-linkedin-in"><span
+                <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/pranavbhile/"><span
                         class="label">LinkedIn</span></a></li>
             </ul>
         </div>
     </section>
 
     <!-- Four -->
-    <section id="four" class="wrapper style2 spotlights">
+    <section class="wrapper style2 spotlights" id="four">
         <section>
-            <a href="#" class="image"><img src="images/corecompete.jpg" alt="Company Logo" data-position="top center"/></a>
+            <a class="image" href="#"><img alt="Company Logo" data-position="top center" src="images/corecompete.jpg"/></a>
             <div class="content">
                 <div class="inner">
                     <h2>CoreCompete (Accenture AI)</h2>
@@ -66,15 +104,15 @@
                     </p>
 
                     <ul class="actions">
-                        <li><a href="https://www.linkedin.com/company/corecompete/" class="button">Company LinkedIn</a>
+                        <li><a class="button" href="https://www.linkedin.com/company/corecompete/">Company LinkedIn</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
         <section>
-            <a href="#" class="image"><img src="images/KlinikEverywhere.png" alt="Company Logo"
-                                           data-position="top center"/></a>
+            <a class="image" href="#"><img alt="Company Logo" data-position="top center"
+                                           src="images/KlinikEverywhere.png"/></a>
             <div class="content">
                 <div class="inner">
                     <h2>Klinik Everywhere</h2>
@@ -86,7 +124,7 @@
                         communication between doctors and patients.
                     </p>
                     <ul class="actions">
-                        <li><a href="https://www.linkedin.com/company/klinik-everywhere/" class="button">Company
+                        <li><a class="button" href="https://www.linkedin.com/company/klinik-everywhere/">Company
                             LinkedIn</a></li>
                     </ul>
                 </div>
@@ -96,7 +134,7 @@
 
 
     <!-- Five -->
-    <section id="five" class="wrapper style3 fade-up">
+    <section class="wrapper style3 fade-up" id="five">
         <div class="inner">
             <h2>Achievements</h2>
             <div class="features">
@@ -138,7 +176,7 @@
 
 
     <!-- Two -->
-    <section id="two" class="wrapper style1-alt">
+    <section class="wrapper style1-alt" id="two">
         <div class="inner">
             <h2>Certifications</h2>
             <p>Contact for verification ID</p>
@@ -180,7 +218,7 @@
     </section>
 
     <!-- One -->
-    <section id="one" class="wrapper style2 spotlights">
+    <section class="wrapper style2 spotlights" id="one_one">
         <section>
             <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
             <div class="content">
@@ -241,7 +279,8 @@
                 </div>
             </div>
         </section>
-
+    </section>
+    <section class="wrapper style2 spotlights" id="one_two">
         <section>
             <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
             <div class="content">
@@ -302,7 +341,7 @@
 
 
     <!-- Three -->
-    <section id="three" class="wrapper style1 fade-up">
+    <section class="wrapper style1 fade-up" id="three">
         <div class="inner">
             <h2>Get in touch</h2>
             <p>Feel free to contact me anytime.</p>
@@ -325,10 +364,10 @@
                         <li>
                             <h3>Social</h3>
                             <ul class="icons">
-                                <li><a href="https://github.com/pranav-git-hub" class="icon brands fa-github"><span
+                                <li><a class="icon brands fa-github" href="https://github.com/pranav-git-hub"><span
                                         class="label">GitHub</span></a></li>
-                                <li><a href="https://www.linkedin.com/in/pranavbhile/"
-                                       class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                <li><a class="icon brands fa-linkedin-in"
+                                       href="https://www.linkedin.com/in/pranavbhile/"><span class="label">LinkedIn</span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -377,12 +416,10 @@
 </div>
 
 <!-- Footer -->
-<footer id="footer" class="wrapper style5 fade-up">
+<footer class="wrapper style5 fade-up" id="footer">
     <div class="inner">
         <h3>Visitor Count</h3>
-<!--        <script type='text/javascript'-->
-<!--                src='https://www.freevisitorcounters.com/auth.php?id=c333d50cc08e2b5ee2cdc6416bff0c8e44a81b6c'></script>-->
-        <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/856050/t/13"></script>
+        <script src="https://www.freevisitorcounters.com/en/home/counter/856050/t/13" type="text/javascript"></script>
         <ul class="menu">
             <li>Website owned by Pranav Arvind Bhile.</li>
             <li>Design: <a href="https://pranav-git-hub.github.io/web/">Pranav Bhile</a></li>
