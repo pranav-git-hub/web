@@ -1,640 +1,827 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
-<head>
+  <head>
     <title>Pranav Arvind Bhile</title>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
-    <link href="assets/css/main.css" rel="stylesheet"/>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link href="assets/css/main.css" rel="stylesheet" />
     <noscript>
-        <link href="assets/css/noscript.css" rel="stylesheet"/>
+      <link href="assets/css/noscript.css" rel="stylesheet" />
     </noscript>
-</head>
-<body class="is-preload">
-
-<!-- Sidebar -->
-<section id="sidebar">
-    <div class="inner">
+  </head>
+  <body class="is-preload">
+    <!-- Sidebar -->
+    <section id="sidebar">
+      <div class="inner">
         <nav>
-            <ul>
-                <li><a href="#intro">Welcome</a></li>
-                <li><a href="#four_one">Work Experience</a></li>
-                <li><a href="#five">Achievements</a></li>
-                <li><a href="#six">Research</a></li>
-                <li><a href="#two">Certifications</a></li>
-                <li><a href="#one_one">Projects</a></li>
-                <li><a href="#three">Get in touch</a></li>
-                <li>
-                    <audio autoplay loop src="audio/come_fly_with_me.mp3" type="audio/mp3" hidden id="FlyAwayWithMe">
-                    </audio>
-                </li>
+          <ul>
+            <li><a href="#intro">Welcome</a></li>
+            <li><a href="#four_one">Work Experience</a></li>
+            <li><a href="#five">Achievements</a></li>
+            <li><a href="#six">Research</a></li>
+            <li><a href="#two">Certifications</a></li>
+            <li><a href="#one_one">Projects</a></li>
+            <li><a href="#three">Get in touch</a></li>
+            <li>
+              <audio
+                autoplay
+                loop
+                src="audio/come_fly_with_me.mp3"
+                type="audio/mp3"
+                hidden
+                id="FlyAwayWithMe"
+              ></audio>
+            </li>
 
+            <button id="playAudio">Background Music</button>
 
-                <button id="playAudio">Background Music</button>
+            <script type="text/javascript">
+              document
+                .getElementById("playAudio")
+                .addEventListener("click", function () {
+                  var audio = document.getElementById("FlyAwayWithMe");
 
-                <script type="text/javascript">
-                document.getElementById("playAudio").addEventListener("click", function(){
-                    var audio = document.getElementById('FlyAwayWithMe');
-
-                    if(this.className == "is-playing"){
-                        this.className = "";
-                        this.innerHTML = "Play Music"
-                        audio.pause();
-                    }
-                    else{
-                        this.className = "is-playing";
-                        this.innerHTML = "Pause Music";
-                        audio.play();
-                    }
+                  if (this.className == "is-playing") {
+                    this.className = "";
+                    this.innerHTML = "Play Music";
+                    audio.pause();
+                  } else {
+                    this.className = "is-playing";
+                    this.innerHTML = "Pause Music";
+                    audio.play();
+                  }
                 });
-
-
-                </script>
-            </ul>
+            </script>
+          </ul>
         </nav>
+      </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Intro -->
+      <section class="wrapper style1 fullscreen fade-up" id="intro">
+        <div class="inner">
+          <h1>Pranav Arvind Bhile</h1>
+          <h2>
+            <strong>
+              AI/ML Engineer: Transforming Business Challenges into Competitive
+              Advantages
+            </strong>
+          </h2>
+
+          <p>
+            I architect <strong>state-of-the-art generative AI</strong> and
+            <strong>machine learning solutions</strong> that deliver measurable
+            ROI and on-time implementation.
+          </p>
+
+          <p>
+            <strong>MIT-published researcher</strong> with a portfolio of
+            transformative solutions for <strong>Fortune 500</strong> companies.
+            B.E. in <strong>Computer Science from BITS Pilani</strong>.
+          </p>
+
+          <p>
+            Specialized in Generative AI and
+            <strong>Advanced Machine Learning Algorithms</strong> with
+            expert-level proficiency in Python, PyTorch, TensorFlow, and
+            <strong>enterprise-grade deployments</strong> across Azure, AWS, and
+            GCP ecosystems.
+          </p>
+
+          <p>
+            <strong>Ready to turn your AI vision into reality?</strong> Contact
+            me to drive innovation for your organization.
+          </p>
+
+          <ul class="icons">
+            <li>
+              <a
+                class="icon brands fa-github"
+                href="https://github.com/pranav-git-hub"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="icon brands fa-linkedin-in"
+                href="https://www.linkedin.com/in/pranavbhile/"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a class="icon solid fa-envelope" href="mailto:asdfa@gmail.com"
+                ><span class="label">Email</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Four Work Experience-->
+      <section class="wrapper style2 spotlights" id="four_one">
+        <section>
+          <a class="image" href="#"
+            ><img
+              alt="Company Logo"
+              data-position="top center"
+              src="images/MIT.png"
+          /></a>
+          <div class="content">
+            <div class="inner">
+              <h2>
+                MIT (Massachusetts Institute of Technology), Cambridge, USA
+              </h2>
+              <h3>Undergraduate Thesis Researcher</h3>
+              <p>
+                Published research titled Understanding Structure of LLM Using
+                Neural Cluster Knockout at IEEE-indexed international
+                conference.
+              </p>
+              <p>
+                Pioneered novel Neural Knockout technique in LLM, optimizing
+                neuron usage to address hallucination issues in generative AI,
+                achieving increased model accuracy in 60% of cases for LLaMA 7B
+                and 33B model.
+              </p>
+              <p>
+                Discovered critical model dependency on just 0.016% of the LLM's
+                parameters, leading to training optimizations.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a class="button" href="https://engineering.mit.edu/"
+                    >Website Link</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <a class="image" href="#"
+            ><img
+              alt="Company Logo"
+              data-position="top center"
+              src="images/VISA.jpg"
+            />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <h2>VISA, Inc., Bengaluru, India</h2>
+              <h3>Data Engineering Intern</h3>
+              <p>
+                Launched VISA Bengaluru's first Generative AI (LLM) in
+                collaboration with the USA team, using RAG and QLoRA fine-tuning
+                on SQuAD dataset, impacting 28,000+ global users.
+              </p>
+              <p>
+                Built multilingual Q&A model with 92% accuracy on internal
+                knowledge base, eliminating 70+ hrs of training.
+              </p>
+              <p>
+                Coded a privacy-focused, end-to-end AI system with an automated
+                web scraper for real-time data retrieval, reducing maintenance
+                costs by 65%, increasing scalability and reusability for
+                multiple use cases.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a
+                    class="button"
+                    href="https://www.linkedin.com/company/visa/"
+                    >Company LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <a class="image" href="#"
+            ><img
+              alt="Company Logo"
+              data-position="top center"
+              src="images/hu.jpg"
+            />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <h2>Hiroshima University, Hiroshima, Japan</h2>
+              <h3>Visiting Machine Learning Researcher</h3>
+              <p>
+                Conducted cross-cultural data science research analyzing 1M data
+                points to optimize sustainable energy solutions.
+              </p>
+              <p>
+                Formulated ML energy optimization algorithm using geospatial
+                data that improved throughput efficiency by 7%.
+              </p>
+              <p>
+                Presented findings to an international academic audience, Japan,
+                collaborating with researchers from 3 countries.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a class="button" href="https://www.hiroshima-u.ac.jp/en"
+                    >Website Link</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="wrapper style2 spotlights" id="four_two">
+        <section>
+          <a class="image" href="#"
+            ><img
+              alt="Company Logo"
+              data-position="top center"
+              src="images/AccentureAI.jpg"
+          /></a>
+          <div class="content">
+            <div class="inner">
+              <h2>Accenture AI (CoreCompete), North Carolina, USA</h2>
+              <h3>Data Science Intern</h3>
+              <p>
+                Led a 4 intern team in developing a secure data pipeline on
+                Google Cloud Platform with 99% data integrity.
+              </p>
+              <p>
+                Automated big data workflows using SQL and Python, reducing
+                manual data processing by 60% and enabling real-time data-driven
+                decision making for stakeholders.
+              </p>
+              <p>
+                Constructed comprehensive analytics dashboard tracking 50+
+                metrics, decreasing report generation time by 40%.
+              </p>
+
+              <ul class="actions">
+                <li>
+                  <a
+                    class="button"
+                    href="https://www.accenture.com/be-en/services/ai-artificial-intelligence-index"
+                    >Company Link</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <a class="image" href="#"
+            ><img
+              alt="Company Logo"
+              data-position="top center"
+              src="images/klinik_logo.jpg"
+            />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <h2>Klinik Everywhere, Bengaluru, India</h2>
+              <h3>Software Developer Intern</h3>
+              <p>
+                Contributed as core developer in a healthcare startup led by
+                former Global Managing Director of Healthcare & Public Services.
+              </p>
+              <p>
+                Built TeleCare, the company's first market-ready product, a
+                mobile application that enhances doctor-patient interaction with
+                features like video and text chat, EMR records, and appointment
+                booking, significantly improving healthcare accessibility.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a
+                    class="button"
+                    href="https://www.linkedin.com/company/klinik-everywhere/"
+                    >Company LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Five Achievements-->
+      <section class="wrapper style3 fade-up" id="five">
+        <div class="inner">
+          <h2>Achievements</h2>
+          <div class="features">
+            <section>
+              <span class="icon solid major fa-award"></span>
+              <h3>Google Solution Challenge 2022</h3>
+              <h5>TOP 50 Globally</h5>
+              <a herf="https://g.dev/googlepranav/" target="_blank">
+                https://g.dev/googlepranav/</a
+              >
+            </section>
+            <section>
+              <span class="icon solid major fa-award"></span>
+              <h3>Dr. APJ Abdul Kalam Ignite Awards</h3>
+              <h5>National working model building Competition.</h5>
+              <p>Won Rs. 5000.</p>
+            </section>
+            <section>
+              <span class="icon solid major fa-award"></span>
+              <h3>HackBVEST’21</h3>
+              <h5>Hackathon</h5>
+              <p>1st Place Winner.</p>
+            </section>
+            <section>
+              <span class="icon solid major fa-award"></span>
+              <h3>Goa Police Hackathon</h3>
+              <h5>Hackathon</h5>
+              <p>Project selected</p>
+            </section>
+            <section>
+              <span class="icon solid major fa-award"></span>
+              <h3>Hacktoberfest 2022</h3>
+              <h5>Open Source</h5>
+              <p>Contributed to 6 unique repositories.</p>
+            </section>
+            <section>
+              <span class="icon solid major fa-award"></span>
+              <h3>Hacktoberfest 2021</h3>
+              <h5>Open Source</h5>
+              <p>Maintainer and Contributor.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Six Research-->
+      <section class="wrapper style2 spotlights" id="six">
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>Self-Supervised Remote Sensing on Mathematical Morphology</h2>
+              <h4>Advisor: Dr. Aditya Challa</h4>
+              <ul>
+                <li>
+                  Led a team of 3 to develop a self-supervised remote sensing
+                  model on the BigEarthNet dataset, achieving 81.62% accuracy.
+                </li>
+                <li>
+                  Demonstrated the necessity of mathematical morphology as an
+                  augmentation in training with contrastive learning.
+                </li>
+                <!-- <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>Electric Charging Station Location Optimization</h2>
+              <h4>Advisor: Dr. Swati Agarwal</h4>
+              <ul>
+                <li>
+                  Optimized positioning of fast and slow electric charging
+                  stations using Particle Swarm Optimization (PSO) algorithm.
+                </li>
+                <li>
+                  Implemented multi-objective model balancing traffic patterns
+                  and grid load, optimizing placement for 50+ charging
+                  locations.
+                </li>
+                <!-- <ul class="actions">
+                        <li><a href="generic.html" class="button">Learn more</a></li>
+                    </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>Machine Learning Models For Astrophysics Formulas</h2>
+              <h4>Advisor: Dr. Tarun Kumar Jha</h4>
+              <ul>
+                <li>
+                  Worked on 4 different classification models to achieve the
+                  best accuracy of 93% on various celestial bodies.
+                </li>
+                <li>
+                  Specialized in OB stars to refine the precision of
+                  astrophysics formulas, contributing to more accurate
+                  theoretical models.
+                </li>
+                <!-- <ul class="actions">
+                        <li><a href="generic.html" class="button">Learn more</a></li>
+                    </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Two Certifications-->
+      <section class="wrapper style1-alt" id="two">
+        <div class="inner">
+          <h2>Certifications</h2>
+          <p>Contact for verification ID and certificate copies</p>
+          <div class="features">
+            <section>
+              <span class="icon solid major fa-code"></span>
+              <h3>Microsoft Virtual Experience</h3>
+            </section>
+
+            <section>
+              <span class="icon solid major fa-code"></span>
+              <h3>JP Morgan Chase Virtual Experience</h3>
+              <!--<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>-->
+            </section>
+
+            <section>
+              <span class="icon solid major fa-code"></span>
+              <h3>
+                Building Transformer-Based Natural Language Processing
+                Applications - NVIDIA
+              </h3>
+            </section>
+
+            <section>
+              <span class="icon solid major fa-code"></span>
+              <h3>Fundamentals of Deep Learning - NVIDIA</h3>
+            </section>
+
+            <section>
+              <span class="icon solid major fa-code"></span>
+              <h3>The Data Scientist's Toolbox - Coursera</h3>
+            </section>
+
+            <section>
+              <span class="icon solid major fa-code"></span>
+              <h3>Create Your First Game with Python - Coursera</h3>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- One Projects-->
+      <section class="wrapper style2 spotlights" id="one_one">
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>AI-based Renewable Energy Recommender and Optimizer</h2>
+              <ul>
+                <li>
+                  Developed an AI-based web application to recommend clean
+                  energy sources with 92% accuracy for your exact longitude and
+                  latitude by normalizing historical climate data and the
+                  current month and weather conditions.
+                </li>
+                <li>
+                  Provides the most optimal configuration for every day of the
+                  week with 78% accuracy using prediction algorithms.
+                </li>
+                <!-- <ul class="actions">
+                        <li><a href="generic.html" class="button">Learn more</a></li>
+                    </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>CCTV Threat Detection</h2>
+              <ul>
+                <li>
+                  Created a CCTV safety system with 73% accuracy to alert
+                  authorities based on threat activity, reducing 20% of security
+                  cost.
+                </li>
+                <li>
+                  Used OpenCV technology to detect threat activities like
+                  holding a knife and shooting on the camera in real-time
+                  without delay.
+                </li>
+                <!-- <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>Genetic Algorithm for Graph Coloring</h2>
+              <ul>
+                <li>
+                  Created a fast and highly functional Genetic algorithm with
+                  features like Mutation, inversion, 2-point Canonical
+                  crossover, and, Elitism to give solutions to NP-Hard problems
+                  in seconds.
+                </li>
+                <li>
+                  Users can adjust features like population size, number of
+                  generations, number of edges, max run time, mutation rate,
+                  elitism rate, and inversion rate.
+                </li>
+                <li>
+                  One can even adjust the fitness function to get the solution
+                  to other similarly encoded populations.
+                </li>
+                <!-- <ul class="actions">
+                        <li><a href="generic.html" class="button">Learn more</a></li>
+                    </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="wrapper style2 spotlights" id="one_two">
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>Plant Disease Diagnosis</h2>
+              <ul>
+                <li>
+                  Developed a mobile application to recognize the plant and
+                  disease name with a cure for it with 99.2% accuracy.
+                </li>
+                <li>
+                  Ready to be deployed on drones to standstill cameras to bring
+                  the spread of plant diseases to almost 0% when administered
+                  weekly. The CNN model adopts various techniques for disease
+                  detection like Batch Normalization, Max Pooling techniques.
+                </li>
+                <!-- <ul class="actions">
+                        <li><a href="generic.html" class="button">Learn more</a></li>
+                    </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>
+                Particle Swarm Optimization and Artificial Bee Colony
+                Optimization
+              </h2>
+              <ul>
+                <li>
+                  Implemented newly developed algorithms like Particle Swarm
+                  Optimization and Artificial Bee Colony Optimization to get the
+                  optimum results (maximum or minimum) for any number of
+                  mathematical equations with any number of constraints within
+                  seconds.
+                </li>
+                <!-- <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>Data Analysis and Prediction Models</h2>
+              <ul>
+                <li>
+                  Anime recommendation - merged data, cleaned data, selected
+                  interesting features, made a pivot table and applied KNN for
+                  recommendation.
+                </li>
+                <li>Google Chaii - Hindi and Tamil Question Answering</li>
+                <li>
+                  Data visualization, correlation, and predictions by unfreezing
+                  and optimizing pre-trained models.
+                </li>
+                <li>
+                  Projects on DataSets: Kaggle Google Landmark Recognition 2021,
+                  Kaggle American Sign Language Recognition, and MNIST
+                  Handwritten Digit Recognition.
+                </li>
+                <!-- <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="wrapper style2 spotlights" id="one_three">
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>Othello AI</h2>
+              <ul>
+                <li>
+                  A game of Othello in the PyGame module of Python. Has 1-level
+                  deep AI mode for 1 player mode.
+                </li>
+                <li>
+                  The game can be rendered according to the user’s choice.
+                </li>
+                <li>
+                  The game imparts scores and points in 2 ways, increasing
+                  re-usability.
+                </li>
+                <!-- <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!--            <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>MediServ</h2>
+              <ul>
+                <li>
+                  Created a Medical Service providing system built in C++ to
+                  work in COVID-19 conditions for the Devfest Hackathon.
+                </li>
+                <li>
+                  It helps in the primary diagnosis of diseases at the comfort
+                  of home.
+                </li>
+                <li>
+                  Special emergency portal can call ambulances and buy medicines
+                  on an urgent basis.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
+          <div class="content">
+            <div class="inner">
+              <h2>Ebook to Audiobook</h2>
+              <ul>
+                <li>
+                  Created a Python program from scratch that converts ebooks to
+                  audiobooks in online or offline modes with absolute accuracy.
+                </li>
+                <li>
+                  It can save and play audiobooks at different speeds, available
+                  in 80 different accents and languages. Moreover, it can read
+                  audiobooks from various formats like .epub, .pdf, and .txt and
+                  save them in another format.
+                </li>
+                <!-- <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Three Get in touch-->
+      <section class="wrapper style1 fade-up" id="three">
+        <div class="inner">
+          <h2>Get in touch</h2>
+          <p>Feel free to contact me anytime.</p>
+          <div class="split style1">
+            <section>
+              <ul class="contact">
+                <li>
+                  <h3>Address</h3>
+                  <span>India</span>
+                </li>
+                <li>
+                  <h3>Github</h3>
+                  <a href="https://github.com/pranav-git-hub">pranav-git-hub</a>
+                </li>
+                <li>
+                  <h3>Linkdin</h3>
+                  <a href="https://www.linkedin.com/in/pranavbhile/"
+                    >Pranav Arvind Bhile</a
+                  >
+                </li>
+                <li>
+                  <h3>Social</h3>
+                  <ul class="icons">
+                    <li>
+                      <a
+                        class="icon brands fa-github"
+                        href="https://github.com/pranav-git-hub"
+                        ><span class="label">GitHub</span></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="icon brands fa-linkedin-in"
+                        href="https://www.linkedin.com/in/pranavbhile/"
+                        ><span class="label">LinkedIn</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            <!--                <section>-->
+            <!--                    <form method="post" action="#">-->
+            <!--                        <div class="fields">-->
+            <!--                            <div class="field half">-->
+            <!--                                <label for="name">Name</label>-->
+            <!--                                <input type="text" name="name" id="name"/>-->
+            <!--                            </div>-->
+            <!--                            <div class="field half">-->
+            <!--                                <label for="email">Email</label>-->
+            <!--                                <input type="text" name="email" id="email"/>-->
+            <!--                            </div>-->
+            <!--                            <div class="field">-->
+            <!--                                <label for="message">Message</label>-->
+            <!--                                <textarea name="message" id="message" rows="5"></textarea>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <ul class="actions">-->
+            <!--                            <li><a href="" class="button submit">Send Message</a></li>-->
+            <!--                        </ul>-->
+            <!--                    </form>-->
+            <!--                </section>-->
+            <section>
+              <ul class="Skills">
+                <h3>My Skill Set</h3>
+                <span>
+                  Python<br />
+                  Generative AI<br />
+                  LLMs (Large Language Models)<br />
+                  NLP (Natural Language Processing)<br />
+                  AI / ML (Computer Vision, Neural Networks)<br />
+                  SQL<br />
+                  C / C++<br />
+                  Google Cloud Platform (GCP)<br />
+                  Azure<br />
+                  Big Data<br />
+                  Model Optimization<br />
+                </span>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
     </div>
-</section>
 
-<!-- Wrapper -->
-<div id="wrapper">
-
-    <!-- Intro -->
-    <section class="wrapper style1 fullscreen fade-up" id="intro">
-        <div class="inner">
-            <h1>Pranav Arvind Bhile</h1>
-            <p>Turning visions into reality through cutting-edge technology, delivering scalable solutions on time.</p>
-            <p>My expertise spans Generative AI, Data Science, Cloud Computing, NLP, AI, and ML by
-                utilizing tools like Python, Azure, Google Cloud, C++, and SQL.</p>
-            <p>Feel free to reach out if you'd like my resume or want to connect!</p>
-
-            <ul class="icons">
-                <li><a class="icon brands fa-github" href="https://github.com/pranav-git-hub"><span
-                        class="label">GitHub</span></a></li>
-                <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/pranavbhile/"><span
-                        class="label">LinkedIn</span></a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Four Work Experience-->
-    <section class="wrapper style2 spotlights" id="four_one">
-        <section>
-            <a class="image" href="#"><img alt="Company Logo" data-position="top center" src="images/MIT.png"/></a>
-            <div class="content">
-                <div class="inner">
-                    <h2>MIT (Massachusetts Institute of Technology), Cambridge, USA</h2>
-                    <h3>Undergraduate Thesis Researcher</h3>
-                    <p>Published "Understanding Structure of LLM Using Neural Cluster Knockout" at IEEE-indexed international conference.
-                    </p>
-                    <p>Developed novel Neural Knockout technique, increasing model accuracy in 60% of cases, optimizing neuron usage to address
-                        hallucination issues in generative AI, and significantly enhancing computational efficiency.
-                    </p>
-                    <p>Discovered critical dependency on just 0.016% of the LLM's total model size, leading to improved training strategies.
-                    </p>
-                    <ul class="actions">
-                        <li><a class="button"
-                               href="https://engineering.mit.edu/">Website Link</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <a class="image" href="#"><img alt="Company Logo" data-position="top center" src="images/VISA.jpg"/> </a>
-            <div class="content">
-                <div class="inner">
-                    <h2>VISA, Inc., Bengaluru, India</h2>
-                    <h3>Data Engineering Intern</h3>
-                    <p>Developed VISA Bengaluru's first Generative AI (LLM) in collaboration with the USA team, impacting 28,000+ users.
-                    </p>
-                    <p>Eliminated 70-hour in-person training program by creating multilingual Q&A model for human-like responses from large
-                        datasets using Natural Language Processing (NLP), significantly improving operational efficiency.                        
-                    </p>
-                    <p>Coded a privacy-focused, end-to-end AI system with an automated web scraper for real-time data retrieval, reducing external
-                        input dependencies to zero and increasing scalability and adaptability for multiple use cases.                        
-                    </p>
-                    <ul class="actions">
-                        <li><a class="button" href="https://www.linkedin.com/company/visa/">Company LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <a class="image" href="#"><img alt="Company Logo" data-position="top center" src="images/hu.jpg"/> </a>
-            <div class="content">
-                <div class="inner">
-                    <h2>Hiroshima University, Hiroshima, Japan</h2>
-                    <h3>Visiting Machine Learning Researcher</h3>
-                    <p>Led cross-cultural data science research with Japanese team, analyzing 1M data points to optimize sustainable energy solutions.
-                    </p>
-                    <p>Developed novel ML energy optimization algorithm using geospatial data, improving throughput efficiency by 7%.
-                    </p>
-                    <p>Presented findings to an international academic audience, collaborating effectively with a diverse team of five researchers.
-                    </p>
-                    <ul class="actions">
-                        <li><a class="button" href="https://www.hiroshima-u.ac.jp/en">Website Link</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <section class="wrapper style2 spotlights" id="four_two">
-        <section>
-            <a class="image" href="#"><img alt="Company Logo" data-position="top center" src="images/AccentureAI.jpg"/></a>
-            <div class="content">
-                <div class="inner">
-                    <h2>Accenture AI (CoreCompete), North Carolina, USA</h2>
-                    <h3>Data Science Intern</h3>
-                    <p>Led a 4 intern team to develop and deploy a secure data model on Google Cloud Platform (GCP) ensuring 99% data integrity.
-                    </p>
-                    <p>Implemented big data automation using SQL and Python, achieving 60% reduction in data input by eliminating manual updates.
-                    </p>
-                    <p>Designed and launched a 50+ metric analytics dashboard, reducing report generation time by 40% and enabling real-time
-                        decision making for stakeholders.
-                    </p>
-
-                    <ul class="actions">
-                        <li><a class="button"
-                               href="https://www.accenture.com/be-en/services/ai-artificial-intelligence-index">Company
-                            Link</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <a class="image" href="#"><img alt="Company Logo" data-position="top center" src="images/klinik_logo.jpg"/>
-            </a>
-            <div class="content">
-                <div class="inner">
-                    <h2>Klinik Everywhere, Bengaluru, India</h2>
-                    <h3>Software Developer Intern</h3>
-                    <p>Contributed as core developer in a healthcare startup led by former Global Managing Director of Healthcare & Public Services.
-                    </p>
-                    <p>Built TeleCare, the company's first market-ready product, a mobile application that enhances doctor-patient interaction with
-                        features like video and text chat, EMR records, and appointment booking, significantly improving healthcare accessibility.
-                    </p>
-                    <ul class="actions">
-                        <li><a class="button" href="https://www.linkedin.com/company/klinik-everywhere/">Company
-                            LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </section>
-
-
-    <!-- Five Achievements-->
-    <section class="wrapper style3 fade-up" id="five">
-        <div class="inner">
-            <h2>Achievements</h2>
-            <div class="features">
-                <section>
-                    <span class="icon solid major fa-award"></span>
-                    <h3>Google Solution Challenge 2022</h3>
-                    <h5>TOP 50 Globally</h5>
-                    <a herf ="https://g.dev/googlepranav/" target="_blank"> https://g.dev/googlepranav/</a>
-                </section>
-                <section>
-                    <span class="icon solid major fa-award"></span>
-                    <h3>Dr. APJ Abdul Kalam Ignite Awards</h3>
-                    <h5>National working model building Competition.</h5>
-                    <p>Won Rs. 5000.</p>
-                </section>                
-                <section>
-                    <span class="icon solid major fa-award"></span>
-                    <h3>HackBVEST’21</h3>
-                    <h5>Hackathon</h5>
-                    <p>1st Place Winner.</p>
-                </section>
-                <section>
-                    <span class="icon solid major fa-award"></span>
-                    <h3>Goa Police Hackathon</h3>
-                    <h5>Hackathon</h5>
-                    <p>Project selected</p>
-                </section>
-                <section>
-                    <span class="icon solid major fa-award"></span>
-                    <h3>Hacktoberfest 2022</h3>
-                    <h5>Open Source</h5>
-                    <p>Contributed to 6 unique repositories.</p>
-                </section>
-                <section>
-                    <span class="icon solid major fa-award"></span>
-                    <h3>Hacktoberfest 2021</h3>
-                    <h5>Open Source</h5>
-                    <p>Maintainer and Contributor.</p>
-                </section>
-            </div>
-        </div>
-    </section>
-
-    <!-- Six Research-->
-    <section class="wrapper style2 spotlights" id="six">
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>Self-Supervised Remote Sensing on Mathematical Morphology</h2>
-                    <h4>Advisor: Dr. Aditya Challa</h4>
-                    <ul>
-                        <li>Led a team of 3 to develop a self-supervised remote sensing model on the BigEarthNet dataset, achieving 81.62% accuracy.
-                        </li>
-                        <li>Demonstrated the necessity of mathematical morphology as an augmentation in training with contrastive learning.
-                        </li>
-                        <!-- <ul class="actions">
-                            <li><a href="generic.html" class="button">Learn more</a></li>
-                        </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>Electric Charging Station Location Optimization</h2>
-                    <h4>Advisor: Dr. Swati Agarwal</h4>
-                    <ul>
-                        <li>Optimized positioning of fast and slow electric charging stations using Particle Swarm Optimization (PSO) algorithm.
-                        </li>
-                        <li>Implemented multi-objective model balancing traffic patterns and grid load, optimizing placement for 50+ charging locations.
-                        </li>
-                        <!-- <ul class="actions">
-                        <li><a href="generic.html" class="button">Learn more</a></li>
-                    </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>Machine Learning Models For Astrophysics Formulas</h2>
-                    <h4>Advisor: Dr. Tarun Kumar Jha</h4>
-                    <ul>
-                        <li>Worked on 4 different classification models to achieve the best accuracy of 93% on various celestial bodies.
-                        </li>
-                        <li>Specialized in OB stars to refine the precision of astrophysics formulas, contributing to more accurate theoretical models.
-                        </li>
-                        <!-- <ul class="actions">
-                        <li><a href="generic.html" class="button">Learn more</a></li>
-                    </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-    </section>
-
-
-    <!-- Two Certifications-->
-    <section class="wrapper style1-alt" id="two">
-        <div class="inner">
-            <h2>Certifications</h2>
-            <p>Contact for verification ID and certificate copies</p>
-            <div class="features">
-
-                <section>
-                    <span class="icon solid major fa-code"></span>
-                    <h3>Microsoft Virtual Experience</h3>
-                </section>
-
-                <section>
-                    <span class="icon solid major fa-code"></span>
-                    <h3>JP Morgan Chase Virtual Experience</h3>
-                    <!--<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>-->
-                </section>
-
-                <section>
-                    <span class="icon solid major fa-code"></span>
-                    <h3>Building Transformer-Based Natural Language Processing Applications - NVIDIA</h3>
-                </section>
-
-                <section>
-                    <span class="icon solid major fa-code"></span>
-                    <h3>Fundamentals of Deep Learning - NVIDIA</h3>
-                </section>
-
-                <section>
-                    <span class="icon solid major fa-code"></span>
-                    <h3>The Data Scientist's Toolbox - Coursera</h3>
-                </section>
-
-                <section>
-                    <span class="icon solid major fa-code"></span>
-                    <h3>Create Your First Game with Python - Coursera</h3>
-                </section>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- One Projects-->
-    <section class="wrapper style2 spotlights" id="one_one">
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>AI-based Renewable Energy Recommender and Optimizer</h2>
-                    <ul>
-                        <li>Developed an AI-based web application to recommend clean energy sources with 92% accuracy
-                            for your exact longitude and
-                            latitude by normalizing historical climate data and the current month and weather
-                            conditions.
-                        </li>
-                        <li>Provides the most optimal configuration for every day of the week with 78% accuracy using
-                            prediction algorithms.
-                        </li>
-                        <!-- <ul class="actions">
-                        <li><a href="generic.html" class="button">Learn more</a></li>
-                    </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>CCTV Threat Detection</h2>
-                    <ul>
-                        <li>Created a CCTV safety system with 73% accuracy to alert authorities based on threat
-                            activity, reducing 20% of security cost.
-                        </li>
-                        <li>Used OpenCV technology to detect threat activities like holding a knife and shooting on the
-                            camera in real-time without delay.
-                        </li>
-                        <!-- <ul class="actions">
-                            <li><a href="generic.html" class="button">Learn more</a></li>
-                        </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>Genetic Algorithm for Graph Coloring</h2>
-                    <ul>
-                        <li>Created a fast and highly functional Genetic algorithm with features like Mutation,
-                            inversion, 2-point Canonical crossover, and, Elitism to give solutions to NP-Hard problems
-                            in seconds.
-                        </li>
-                        <li>Users can adjust features like population size, number of generations, number of edges, max
-                            run time, mutation rate, elitism rate, and inversion rate.
-                        </li>
-                        <li>One can even adjust the fitness function to get the solution to other similarly encoded
-                            populations.
-                        </li>
-                        <!-- <ul class="actions">
-                        <li><a href="generic.html" class="button">Learn more</a></li>
-                    </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-    </section>
-
-    <section class="wrapper style2 spotlights" id="one_two">
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>Plant Disease Diagnosis</h2>
-                    <ul>
-                        <li>Developed a mobile application to recognize the plant and disease name with a cure for it
-                            with 99.2% accuracy.
-                        </li>
-                        <li>Ready to be deployed on drones to standstill cameras to bring the spread of plant diseases
-                            to almost 0% when administered weekly. The CNN model adopts various techniques for disease
-                            detection like Batch Normalization, Max Pooling techniques.
-                        </li>
-                        <!-- <ul class="actions">
-                        <li><a href="generic.html" class="button">Learn more</a></li>
-                    </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>Particle Swarm Optimization and Artificial Bee Colony Optimization</h2>
-                    <ul>
-                        <li>Implemented newly developed algorithms like Particle Swarm Optimization and Artificial Bee
-                            Colony Optimization to get the optimum results (maximum or minimum) for any number of
-                            mathematical equations with any number of constraints within seconds.
-                        </li>
-                        <!-- <ul class="actions">
-                            <li><a href="generic.html" class="button">Learn more</a></li>
-                        </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>Data Analysis and Prediction Models</h2>
-                    <ul>
-                        <li>
-                            Anime recommendation - merged data, cleaned data, selected interesting features, made a
-                            pivot table and applied KNN for recommendation.
-                        </li>
-                        <li>
-                            Google Chaii - Hindi and Tamil Question Answering
-                        </li>
-                        <li>Data visualization, correlation, and predictions by unfreezing and optimizing pre-trained
-                            models.
-                        </li>
-                        <li>Projects on DataSets: Kaggle Google Landmark Recognition 2021, Kaggle American Sign Language
-                            Recognition, and MNIST Handwritten Digit Recognition.
-                        </li>
-                        <!-- <ul class="actions">
-                            <li><a href="generic.html" class="button">Learn more</a></li>
-                        </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-    </section>
-
-
-    <section class="wrapper style2 spotlights" id="one_three">
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>Othello AI</h2>
-                    <ul>
-                        <li>A game of Othello in the PyGame module of Python. Has 1-level deep AI mode for 1 player
-                            mode.
-                        </li>
-                        <li>The game can be rendered according to the user’s choice.</li>
-                        <li>The game imparts scores and points in 2 ways, increasing re-usability.</li>
-                        <!-- <ul class="actions">
-                            <li><a href="generic.html" class="button">Learn more</a></li>
-                        </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <!--            <a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>MediServ</h2>
-                    <ul>
-                        <li>Created a Medical Service providing system built in C++ to work in COVID-19 conditions for
-                            the Devfest Hackathon.
-                        </li>
-                        <li>It helps in the primary diagnosis of diseases at the comfort of home.</li>
-                        <li>Special emergency portal can call ambulances and buy medicines on an urgent basis.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
-            <div class="content">
-                <div class="inner">
-                    <h2>Ebook to Audiobook</h2>
-                    <ul>
-                        <li>Created a Python program from scratch that converts ebooks to audiobooks in online or
-                            offline modes with absolute accuracy.
-                        </li>
-                        <li>It can save and play audiobooks at different speeds, available in 80 different accents and
-                            languages. Moreover, it can read audiobooks from various formats like .epub, .pdf, and .txt
-                            and save them in another format.
-                        </li>
-                        <!-- <ul class="actions">
-                            <li><a href="generic.html" class="button">Learn more</a></li>
-                        </ul> -->
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-    </section>
-
-    <!-- Three Get in touch-->
-    <section class="wrapper style1 fade-up" id="three">
-        <div class="inner">
-            <h2>Get in touch</h2>
-            <p>Feel free to contact me anytime.</p>
-            <div class="split style1">
-                <section>
-                    <ul class="contact">
-                        <li>
-                            <h3>Address</h3>
-                            <span>BITS Pilani, Goa Campus,<br/>
-											India,</span>
-                        </li>
-                        <li>
-                            <h3>Github</h3>
-                            <a href="https://github.com/pranav-git-hub">pranav-git-hub</a>
-                        </li>
-                        <li>
-                            <h3>Linkdin</h3>
-                            <a href="https://www.linkedin.com/in/pranavbhile/">Pranav Arvind Bhile</a>
-                        </li>
-                        <li>
-                            <h3>Social</h3>
-                            <ul class="icons">
-                                <li><a class="icon brands fa-github" href="https://github.com/pranav-git-hub"><span
-                                        class="label">GitHub</span></a></li>
-                                <li><a class="icon brands fa-linkedin-in"
-                                       href="https://www.linkedin.com/in/pranavbhile/"><span
-                                        class="label">LinkedIn</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-                <!--                <section>-->
-                <!--                    <form method="post" action="#">-->
-                <!--                        <div class="fields">-->
-                <!--                            <div class="field half">-->
-                <!--                                <label for="name">Name</label>-->
-                <!--                                <input type="text" name="name" id="name"/>-->
-                <!--                            </div>-->
-                <!--                            <div class="field half">-->
-                <!--                                <label for="email">Email</label>-->
-                <!--                                <input type="text" name="email" id="email"/>-->
-                <!--                            </div>-->
-                <!--                            <div class="field">-->
-                <!--                                <label for="message">Message</label>-->
-                <!--                                <textarea name="message" id="message" rows="5"></textarea>-->
-                <!--                            </div>-->
-                <!--                        </div>-->
-                <!--                        <ul class="actions">-->
-                <!--                            <li><a href="" class="button submit">Send Message</a></li>-->
-                <!--                        </ul>-->
-                <!--                    </form>-->
-                <!--                </section>-->
-                <section>
-                    <ul class="Skills">
-                        <h3>My Skill Set</h3>
-                        <span>
-                            Python<br/>
-                            Generative AI<br/>
-                            LLMs (Large Language Models)<br/>
-                            NLP (Natural Language Processing)<br/>
-                            AI / ML (Computer Vision, Neural Networks)<br/>
-                            SQL<br/>
-                            C / C++<br/>
-                            Google Cloud Platform (GCP)<br/>
-                            Azure<br/>
-                            Big Data<br/>
-                            Model Optimization<br/>                            
-                        </span>
-                    </ul>
-                </section>
-
-            </div>
-        </div>
-    </section>
-</div>
-
-<!-- Footer -->
-<footer class="wrapper style5 fade-up" id="footer">
-    <div class="inner">
+    <!-- Footer -->
+    <footer class="wrapper style5 fade-up" id="footer">
+      <div class="inner">
         <h3>Visitor Count</h3>
-        <script src="https://www.freevisitorcounters.com/en/home/counter/856050/t/13" type="text/javascript"></script>
+        <script
+          src="https://www.freevisitorcounters.com/en/home/counter/856050/t/13"
+          type="text/javascript"
+        ></script>
         <ul class="menu">
-            <li>Website owned by Pranav Arvind Bhile.</li>
-            <li>Design: <a href="https://pranav-git-hub.github.io/web/">Pranav Bhile</a></li>
+          <li>Website owned by Pranav Arvind Bhile.</li>
+          <li>
+            Design:
+            <a href="https://pranav-git-hub.github.io/web/">Pranav Bhile</a>
+          </li>
         </ul>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
