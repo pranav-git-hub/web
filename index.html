@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
     <title>Pranav Arvind Bhile</title>
     <meta charset="utf-8" />
     <meta
-      content="width=device-width, initial-scale=1, user-scalable=no"
       name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <link href="assets/css/main.css" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Professional portfolio of Pranav Arvind Bhile - AI/ML Engineer with experience working with Fortune 500 teams"
+    />
+    <meta name="author" content="Pranav Arvind Bhile" />
+    <meta name="theme-color" content="#242943" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
-      <link href="assets/css/noscript.css" rel="stylesheet" />
+      <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/js/jquery.min.js" as="script" />
+    <link rel="preload" href="assets/js/main.js" as="script" />
+    <link rel="preload" href="assets/css/main.css" as="style" />
   </head>
   <body class="is-preload">
     <!-- Sidebar -->
     <section id="sidebar">
       <div class="inner">
-        <nav>
+        <nav aria-label="Main navigation">
           <ul>
             <li><a href="#intro">Welcome</a></li>
             <li><a href="#four_one">Work Experience</a></li>
@@ -25,36 +36,39 @@
             <li><a href="#six">Research</a></li>
             <li><a href="#two">Certifications</a></li>
             <li><a href="#one_one">Projects</a></li>
-            <li><a href="#three">Get in touch</a></li>
+            <li><a href="#three">Skill Set</a></li>
             <li>
               <audio
-                autoplay
-                loop
                 src="audio/come_fly_with_me.mp3"
                 type="audio/mp3"
-                hidden
                 id="FlyAwayWithMe"
+                hidden
               ></audio>
             </li>
 
-            <button id="playAudio">Background Music</button>
+            <button id="playAudio" aria-label="Toggle background music">
+              Background Music
+            </button>
 
-            <script type="text/javascript">
-              document
-                .getElementById("playAudio")
-                .addEventListener("click", function () {
-                  var audio = document.getElementById("FlyAwayWithMe");
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const audioButton = document.getElementById("playAudio");
+                const audio = document.getElementById("FlyAwayWithMe");
 
-                  if (this.className == "is-playing") {
+                audioButton.addEventListener("click", function () {
+                  if (this.className === "is-playing") {
                     this.className = "";
                     this.innerHTML = "Play Music";
                     audio.pause();
                   } else {
                     this.className = "is-playing";
                     this.innerHTML = "Pause Music";
-                    audio.play();
+                    audio.play().catch((e) => {
+                      console.error("Audio playback failed:", e);
+                    });
                   }
                 });
+              });
             </script>
           </ul>
         </nav>
@@ -64,7 +78,7 @@
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Intro -->
-      <section class="wrapper style1 fullscreen fade-up" id="intro">
+      <section id="intro" class="wrapper style1 fullscreen fade-up">
         <div class="inner">
           <h1>Pranav Arvind Bhile</h1>
           <h2>
@@ -74,7 +88,7 @@
           </h2>
 
           <p>
-            I design and deploy production-ready AI solutions — from generative
+            I train and deploy production-ready AI solutions — from generative
             models to enterprise-scale ML pipelines — that deliver real ROI on
             time.
           </p>
@@ -95,6 +109,8 @@
               <a
                 class="icon brands fa-github"
                 href="https://github.com/pranav-git-hub"
+                aria-label="GitHub"
+                rel="noopener"
                 ><span class="label">GitHub</span></a
               >
             </li>
@@ -102,6 +118,8 @@
               <a
                 class="icon brands fa-linkedin-in"
                 href="https://www.linkedin.com/in/pranavbhile/"
+                aria-label="LinkedIn"
+                rel="noopener"
                 ><span class="label">LinkedIn</span></a
               >
             </li>
@@ -109,21 +127,25 @@
               <a
                 class="icon solid fa-envelope"
                 href="mailto:pranavbhile1@gmail.com"
+                aria-label="Email"
                 ><span class="label">Email</span></a
               >
             </li>
           </ul>
         </div>
       </section>
+
       <!-- Four Work Experience-->
-      <section class="wrapper style2 spotlights" id="four_one">
+      <section id="four_one" class="wrapper style2 spotlights">
         <section>
-          <a class="image" href="#"
-            ><img
-              alt="Company Logo"
-              data-position="top center"
+          <a class="image" href="#" aria-hidden="true">
+            <img
               src="images/MIT.png"
-          /></a>
+              alt="MIT Logo"
+              data-position="top center"
+              loading="lazy"
+            />
+          </a>
           <div class="content">
             <div class="inner">
               <h2>
@@ -147,9 +169,13 @@
               </p>
               <ul class="actions">
                 <li>
-                  <a class="button" href="https://engineering.mit.edu/"
-                    >Website Link</a
+                  <a
+                    class="button"
+                    href="https://engineering.mit.edu/"
+                    rel="noopener"
                   >
+                    Website Link
+                  </a>
                 </li>
               </ul>
             </div>
@@ -157,11 +183,12 @@
         </section>
 
         <section>
-          <a class="image" href="#"
-            ><img
-              alt="Company Logo"
-              data-position="top center"
+          <a class="image" href="#" aria-hidden="true">
+            <img
               src="images/VISA.jpg"
+              alt="VISA Logo"
+              data-position="top center"
+              loading="lazy"
             />
           </a>
           <div class="content">
@@ -188,8 +215,10 @@
                   <a
                     class="button"
                     href="https://www.linkedin.com/company/visa/"
-                    >Company LinkedIn</a
+                    rel="noopener"
                   >
+                    Company LinkedIn
+                  </a>
                 </li>
               </ul>
             </div>
@@ -197,11 +226,12 @@
         </section>
 
         <section>
-          <a class="image" href="#"
-            ><img
-              alt="Company Logo"
-              data-position="top center"
+          <a class="image" href="#" aria-hidden="true">
+            <img
               src="images/hu.jpg"
+              alt="Hiroshima University Logo"
+              data-position="top center"
+              loading="lazy"
             />
           </a>
           <div class="content">
@@ -222,9 +252,13 @@
               </p>
               <ul class="actions">
                 <li>
-                  <a class="button" href="https://www.hiroshima-u.ac.jp/en"
-                    >Website Link</a
+                  <a
+                    class="button"
+                    href="https://www.hiroshima-u.ac.jp/en"
+                    rel="noopener"
                   >
+                    Website Link
+                  </a>
                 </li>
               </ul>
             </div>
@@ -232,14 +266,16 @@
         </section>
       </section>
 
-      <section class="wrapper style2 spotlights" id="four_two">
+      <section id="four_two" class="wrapper style2 spotlights">
         <section>
-          <a class="image" href="#"
-            ><img
-              alt="Company Logo"
-              data-position="top center"
+          <a class="image" href="#" aria-hidden="true">
+            <img
               src="images/AccentureAI.jpg"
-          /></a>
+              alt="Accenture AI Logo"
+              data-position="top center"
+              loading="lazy"
+            />
+          </a>
           <div class="content">
             <div class="inner">
               <h2>Accenture AI (CoreCompete), North Carolina, USA</h2>
@@ -263,8 +299,10 @@
                   <a
                     class="button"
                     href="https://www.accenture.com/be-en/services/ai-artificial-intelligence-index"
-                    >Company Link</a
+                    rel="noopener"
                   >
+                    Company Link
+                  </a>
                 </li>
               </ul>
             </div>
@@ -272,11 +310,12 @@
         </section>
 
         <section>
-          <a class="image" href="#"
-            ><img
-              alt="Company Logo"
-              data-position="top center"
+          <a class="image" href="#" aria-hidden="true">
+            <img
               src="images/klinik_logo.jpg"
+              alt="Klinik Everywhere Logo"
+              data-position="top center"
+              loading="lazy"
             />
           </a>
           <div class="content">
@@ -297,9 +336,11 @@
                 <li>
                   <a
                     class="button"
-                    href="https://www.linkedin.com/company/klinik-everywhere/"
-                    >Company LinkedIn</a
+                    href="https://stag.klinikeverywhere.com/Home/"
+                    rel="noopener"
                   >
+                    Company Website
+                  </a>
                 </li>
               </ul>
             </div>
@@ -308,20 +349,24 @@
       </section>
 
       <!-- Five Achievements-->
-      <section class="wrapper style3 fade-up" id="five">
+      <section id="five" class="wrapper style3 fade-up">
         <div class="inner">
           <h2>Achievements</h2>
           <div class="features">
             <section>
-              <span class="icon solid major fa-award"></span>
+              <span class="icon solid major fa-award" aria-hidden="true"></span>
               <h3>Google Solution Challenge 2022</h3>
               <h5>TOP 50 Globally</h5>
-              <a herf="https://g.dev/googlepranav/" target="_blank">
-                https://g.dev/googlepranav/</a
+              <a
+                href="https://g.dev/googlepranav/"
+                target="_blank"
+                rel="noopener"
               >
+                https://g.dev/googlepranav/
+              </a>
             </section>
             <section>
-              <span class="icon solid major fa-award"></span>
+              <span class="icon solid major fa-award" aria-hidden="true"></span>
               <h3>Japan Science and Technology Agency Recognition</h3>
               <h5>Sakura Science Club Membership</h5>
               <p>
@@ -329,25 +374,25 @@
               </p>
             </section>
             <section>
-              <span class="icon solid major fa-award"></span>
+              <span class="icon solid major fa-award" aria-hidden="true"></span>
               <h3>Dr. APJ Abdul Kalam Ignite Awards</h3>
               <h5>National working model building Competition.</h5>
               <p>Won Rs. 5000.</p>
             </section>
             <section>
-              <span class="icon solid major fa-award"></span>
+              <span class="icon solid major fa-award" aria-hidden="true"></span>
               <h3>HackBVEST 2021</h3>
               <h5>Hackathon</h5>
               <p>1st Place Winner.</p>
             </section>
             <section>
-              <span class="icon solid major fa-award"></span>
+              <span class="icon solid major fa-award" aria-hidden="true"></span>
               <h3>Goa Police Hackathon</h3>
               <h5>Hackathon</h5>
               <p>Project shortlisted</p>
             </section>
             <section>
-              <span class="icon solid major fa-award"></span>
+              <span class="icon solid major fa-award" aria-hidden="true"></span>
               <h3>Hacktoberfest 2022 and 2021</h3>
               <h5>Open Source</h5>
               <p>Maintainer and Contributor.</p>
@@ -357,7 +402,7 @@
       </section>
 
       <!-- Six Research-->
-      <section class="wrapper style2 spotlights" id="six">
+      <section id="six" class="wrapper style2 spotlights">
         <section>
           <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
           <div class="content">
@@ -431,24 +476,24 @@
       </section>
 
       <!-- Two Certifications-->
-      <section class="wrapper style1-alt" id="two">
+      <section id="two" class="wrapper style1-alt">
         <div class="inner">
           <h2>Certifications</h2>
           <p>Contact for verification ID and certificate copies</p>
           <div class="features">
             <section>
-              <span class="icon solid major fa-code"></span>
+              <span class="icon solid major fa-code" aria-hidden="true"></span>
               <h3>Microsoft Virtual Experience</h3>
             </section>
 
             <section>
-              <span class="icon solid major fa-code"></span>
+              <span class="icon solid major fa-code" aria-hidden="true"></span>
               <h3>JP Morgan Chase Virtual Experience</h3>
               <!--<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>-->
             </section>
 
             <section>
-              <span class="icon solid major fa-code"></span>
+              <span class="icon solid major fa-code" aria-hidden="true"></span>
               <h3>
                 Building Transformer-Based Natural Language Processing
                 Applications - NVIDIA
@@ -456,17 +501,17 @@
             </section>
 
             <section>
-              <span class="icon solid major fa-code"></span>
+              <span class="icon solid major fa-code" aria-hidden="true"></span>
               <h3>Fundamentals of Deep Learning - NVIDIA</h3>
             </section>
 
             <section>
-              <span class="icon solid major fa-code"></span>
+              <span class="icon solid major fa-code" aria-hidden="true"></span>
               <h3>The Data Scientist's Toolbox - Coursera</h3>
             </section>
 
             <section>
-              <span class="icon solid major fa-code"></span>
+              <span class="icon solid major fa-code" aria-hidden="true"></span>
               <h3>Create Your First Game with Python - Coursera</h3>
             </section>
           </div>
@@ -474,7 +519,7 @@
       </section>
 
       <!-- One Projects-->
-      <section class="wrapper style2 spotlights" id="one_one">
+      <section id="one_one" class="wrapper style2 spotlights">
         <section>
           <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
           <div class="content">
@@ -552,7 +597,7 @@
         </section>
       </section>
 
-      <section class="wrapper style2 spotlights" id="one_two">
+      <section id="one_two" class="wrapper style2 spotlights">
         <section>
           <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
           <div class="content">
@@ -630,7 +675,7 @@
         </section>
       </section>
 
-      <section class="wrapper style2 spotlights" id="one_three">
+      <section id="one_three" class="wrapper style2 spotlights">
         <section>
           <!--<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center"/></a>-->
           <div class="content">
@@ -642,7 +687,7 @@
                   deep AI mode for 1 player mode.
                 </li>
                 <li>
-                  The game can be rendered according to the user’s choice.
+                  The game can be rendered according to the user's choice.
                 </li>
                 <li>
                   The game imparts scores and points in 2 ways, increasing
@@ -705,15 +750,13 @@
       </section>
 
       <!-- Three Get in touch-->
-      <section class="wrapper style1 fade-up" id="three">
+      <section id="three" class="wrapper style1 fade-up">
         <div class="inner">
-          <h2>Get in touch</h2>
-          <p>Feel free to contact me anytime.</p>
+          <h2>My Technical Skills</h2>
           <div class="split style1">
             <section>
-              <ul class="Skills">
-                <h3>My Technical Skills</h3>
-                <span>
+              <div class="contact">
+                <div>
                   <h3>🧠 Machine Learning & AI</h3>
                   <ul>
                     <li>LLM Architecture, Transformers, RAG</li>
@@ -737,56 +780,52 @@
                     <li>Git, Linux, VS Code, Google Colab</li>
                     <li>PyTorch, TensorFlow, Hugging Face, LangChain</li>
                   </ul>
-                </span>
-              </ul>
+                </div>
+              </div>
             </section>
             <section>
-              <ul class="contact">
+              <h3>Feel free to contact me anytime.</h3>
+            
+              <div style="margin-bottom: 1rem;">
+                <h4>Mail</h4>
+                <a href="mailto:pranavbhile1@gmail.com">pranavbhile1@gmail.com</a>
+              </div>
+            
+              <div style="margin-bottom: 1rem;">
+                <h4>GitHub</h4>
+                <a href="https://github.com/pranav-git-hub" rel="noopener">https://github.com/pranav-git-hub</a>
+              </div>
+            
+              <div style="margin-bottom: 1rem;">
+                <h4>LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/pranavbhile/" rel="noopener">https://www.linkedin.com/in/pranavbhile/</a>
+              </div>
+            
+              <div style="margin-bottom: 1.5rem;">
+                <h4>Location</h4>
+                <p>India, Open to relocate</p>
+              </div>
+            
+              <h3>Links</h3>
+              <ul class="icons" style="margin-top: 1rem;">
                 <li>
-                  <h3>Address</h3>
-                  <span>India, Open to relocate</span>
+                  <a class="icon brands fa-github" href="https://github.com/pranav-git-hub" aria-label="GitHub" rel="noopener">
+                    <span class="label">GitHub</span>
+                  </a>
                 </li>
                 <li>
-                  <h3>Github</h3>
-                  <a href="https://github.com/pranav-git-hub">pranav-git-hub</a>
+                  <a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/pranavbhile/" aria-label="LinkedIn" rel="noopener">
+                    <span class="label">LinkedIn</span>
+                  </a>
                 </li>
                 <li>
-                  <h3>Linkdin</h3>
-                  <a href="https://www.linkedin.com/in/pranavbhile/"
-                    >Pranav Arvind Bhile</a
-                  >
-                </li>
-                <li>
-                  <h3>Mail</h3>
-                  <a href="mailto:pranavbhile1@gmail.com">Gmail</a>
-                </li>
-                <li>
-                  <h3>Social</h3>
-                  <ul class="icons">
-                    <li>
-                      <a
-                        class="icon brands fa-github"
-                        href="https://github.com/pranav-git-hub"
-                        ><span class="label">GitHub</span></a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="icon brands fa-linkedin-in"
-                        href="https://www.linkedin.com/in/pranavbhile/"
-                        ><span class="label">LinkedIn</span></a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="icon solid fa-envelope"
-                        href="mailto:pranavbhile1@gmail.com"
-                        ><span class="label">Email</span></a
-                      >
-                    </li>
-                  </ul>
+                  <a class="icon solid fa-envelope" href="mailto:pranavbhile1@gmail.com" aria-label="Email">
+                    <span class="label">Email</span>
+                  </a>
                 </li>
               </ul>
+            </section>
+            
             </section>
             <!--                <section>-->
             <!--                    <form method="post" action="#">-->
@@ -818,27 +857,39 @@
     <footer class="wrapper style5 fade-up" id="footer">
       <div class="inner">
         <h3>Visitor Count</h3>
-        <script
-          src="https://www.freevisitorcounters.com/en/home/counter/856050/t/13"
-          type="text/javascript"
-        ></script>
+        <div id="visitor-counter">
+          <script src="https://www.freevisitorcounters.com/en/home/counter/856050/t/13"></script>
+        </div>
         <ul class="menu">
-          <li>Website owned by Pranav Arvind Bhile.</li>
           <li>
-            Design:
-            <a href="https://pranav-git-hub.github.io/web/">Pranav Bhile</a>
+            &copy; <span id="current-year">2025</span> Pranav Arvind Bhile. All
+            rights reserved.
+          </li>
+          <li>
+            Website:
+            <a
+              href="https://pranav-git-hub.github.io/web/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Pranav Bhile</a
+            >
           </li>
         </ul>
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+
+    <!-- Load all JS dependencies with best practices -->
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/jquery.scrollex.min.js" defer></script>
+    <script src="assets/js/jquery.scrolly.min.js" defer></script>
+    <script src="assets/js/browser.min.js" defer></script>
+    <script src="assets/js/breakpoints.min.js" defer></script>
+    <script src="assets/js/util.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
