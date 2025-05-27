@@ -43,11 +43,12 @@
                 type="audio/mp3"
                 id="FlyAwayWithMe"
                 hidden
+                loop
               ></audio>
             </li>
 
             <button id="playAudio" aria-label="Toggle background music">
-              Background Music
+              Music
             </button>
 
             <script>
@@ -58,11 +59,11 @@
                 audioButton.addEventListener("click", function () {
                   if (this.className === "is-playing") {
                     this.className = "";
-                    this.innerHTML = "Play Music";
+                    this.innerHTML = "Play";
                     audio.pause();
                   } else {
                     this.className = "is-playing";
-                    this.innerHTML = "Pause Music";
+                    this.innerHTML = "Pause";
                     audio.play().catch((e) => {
                       console.error("Audio playback failed:", e);
                     });
@@ -140,6 +141,99 @@
         <section>
           <a class="image" href="#" aria-hidden="true">
             <img
+              src="images/axtria_logo.png"
+              alt="Axtria Logo"
+              data-position="top center"
+              loading="lazy"
+            />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <h2>Axtria, Noida, India</h2>
+              <h3>Artificial Intelligence and Machine Learning Engineer</h3>
+              <p>
+                <em>Engineered Generative AI and ML-powered products</em>
+                deployed across
+                <em>8 of the top 10 global pharmaceutical companies</em>,
+                improving healthcare delivery for
+                <em>200M+ patients</em> through <em>Big Data</em> and
+                <em>LLM</em>.
+              </p>
+              <p>
+                Developed
+                <em
+                  >enterprise-grade Alpaca-LoRA finetuned, Retrieval Augmented
+                  Generation (RAG) chatbot</em
+                >
+                with <em>scheduled API integration</em>, reducing
+                <em>manual data entry by 70%</em> while automating
+                <em>complex workflow processes</em>.
+              </p>
+              <p>
+                Built <em>natural language variable extraction system</em> with
+                <em>schema validation and data integrity checks</em>, decreasing
+                <em>error rates by 85%</em> across pharmaceutical data
+                management systems.
+              </p>
+
+              <ul class="actions">
+                <li>
+                  <a
+                    class="button"
+                    href="https://www.linkedin.com/company/axtria/"
+                    rel="noopener"
+                  >
+                    Company LinkedIn
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <a class="image" href="#" aria-hidden="true">
+            <img
+              src="images/ust_logo.png"
+              alt="Hiroshima University Logo"
+              data-position="top center"
+              loading="lazy"
+            />
+          </a>
+          <div class="content">
+            <div class="inner">
+              <h2>UST Global, Trivandrum, India</h2>
+              <h3>Machine Learning Engineering Intern</h3>
+              <p>
+                Conducted cross-cultural data science research analyzing 1M data
+                points to optimize sustainable energy solutions.
+              </p>
+              <p>
+                Formulated ML energy optimization algorithm using geospatial
+                data that improved throughput efficiency by 7%.
+              </p>
+              <p>
+                Presented findings to an international academic audience, Japan,
+                collaborating with researchers from 3 countries.
+              </p>
+              <ul class="actions">
+                <li>
+                  <a
+                    class="button"
+                    href="https://www.linkedin.com/company/ustglobal/"
+                    rel="noopener"
+                  >
+                    Website Link
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <a class="image" href="#" aria-hidden="true">
+            <img
               src="images/MIT.png"
               alt="MIT Logo"
               data-position="top center"
@@ -151,7 +245,7 @@
               <h2>
                 MIT (Massachusetts Institute of Technology), Cambridge, USA
               </h2>
-              <h3>Undergraduate Thesis Researcher</h3>
+              <h3>Machine Learning Researcher</h3>
               <p>
                 Published research titled Understanding Structure of LLM Using
                 Neural Cluster Knockout at IEEE-indexed international
@@ -181,7 +275,9 @@
             </div>
           </div>
         </section>
+      </section>
 
+      <section id="four_two" class="wrapper style2 spotlights">
         <section>
           <a class="image" href="#" aria-hidden="true">
             <img
@@ -194,7 +290,7 @@
           <div class="content">
             <div class="inner">
               <h2>VISA, Inc., Bengaluru, India</h2>
-              <h3>Data Engineering Intern</h3>
+              <h3>Data Science Intern</h3>
               <p>
                 Launched VISA Bengaluru's first Generative AI (LLM) in
                 collaboration with the USA team, using RAG and QLoRA fine-tuning
@@ -237,7 +333,7 @@
           <div class="content">
             <div class="inner">
               <h2>Hiroshima University, Hiroshima, Japan</h2>
-              <h3>Visiting Machine Learning Researcher</h3>
+              <h3>Artificial Intelligence Researcher</h3>
               <p>
                 Conducted cross-cultural data science research analyzing 1M data
                 points to optimize sustainable energy solutions.
@@ -264,9 +360,7 @@
             </div>
           </div>
         </section>
-      </section>
 
-      <section id="four_two" class="wrapper style2 spotlights">
         <section>
           <a class="image" href="#" aria-hidden="true">
             <img
@@ -279,7 +373,7 @@
           <div class="content">
             <div class="inner">
               <h2>Accenture AI (CoreCompete), North Carolina, USA</h2>
-              <h3>Data Science Intern</h3>
+              <h3>Data Engineering Intern</h3>
               <p>
                 Led a 4 intern team in developing a secure data pipeline on
                 Google Cloud Platform with 99% data integrity.
@@ -308,7 +402,9 @@
             </div>
           </div>
         </section>
+      </section>
 
+      <section id="four_three" class="wrapper style2 spotlights">
         <section>
           <a class="image" href="#" aria-hidden="true">
             <img
@@ -785,48 +881,69 @@
             </section>
             <section>
               <h3>Feel free to contact me anytime.</h3>
-            
-              <div style="margin-bottom: 1rem;">
+
+              <div style="margin-bottom: 1rem">
                 <h4>Mail</h4>
-                <a href="mailto:pranavbhile1@gmail.com">pranavbhile1@gmail.com</a>
+                <a href="mailto:pranavbhile1@gmail.com"
+                  >pranavbhile1@gmail.com</a
+                >
               </div>
-            
-              <div style="margin-bottom: 1rem;">
+
+              <div style="margin-bottom: 1rem">
                 <h4>GitHub</h4>
-                <a href="https://github.com/pranav-git-hub" rel="noopener">https://github.com/pranav-git-hub</a>
+                <a href="https://github.com/pranav-git-hub" rel="noopener"
+                  >https://github.com/pranav-git-hub</a
+                >
               </div>
-            
-              <div style="margin-bottom: 1rem;">
+
+              <div style="margin-bottom: 1rem">
                 <h4>LinkedIn</h4>
-                <a href="https://www.linkedin.com/in/pranavbhile/" rel="noopener">https://www.linkedin.com/in/pranavbhile/</a>
+                <a
+                  href="https://www.linkedin.com/in/pranavbhile/"
+                  rel="noopener"
+                  >https://www.linkedin.com/in/pranavbhile/</a
+                >
               </div>
-            
-              <div style="margin-bottom: 1.5rem;">
+
+              <div style="margin-bottom: 1.5rem">
                 <h4>Location</h4>
                 <p>India, Open to relocate</p>
               </div>
-            
+
               <h3>Links</h3>
-              <ul class="icons" style="margin-top: 1rem;">
+              <ul class="icons" style="margin-top: 1rem">
                 <li>
-                  <a class="icon brands fa-github" href="https://github.com/pranav-git-hub" aria-label="GitHub" rel="noopener">
+                  <a
+                    class="icon brands fa-github"
+                    href="https://github.com/pranav-git-hub"
+                    aria-label="GitHub"
+                    rel="noopener"
+                  >
                     <span class="label">GitHub</span>
                   </a>
                 </li>
                 <li>
-                  <a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/pranavbhile/" aria-label="LinkedIn" rel="noopener">
+                  <a
+                    class="icon brands fa-linkedin-in"
+                    href="https://www.linkedin.com/in/pranavbhile/"
+                    aria-label="LinkedIn"
+                    rel="noopener"
+                  >
                     <span class="label">LinkedIn</span>
                   </a>
                 </li>
                 <li>
-                  <a class="icon solid fa-envelope" href="mailto:pranavbhile1@gmail.com" aria-label="Email">
+                  <a
+                    class="icon solid fa-envelope"
+                    href="mailto:pranavbhile1@gmail.com"
+                    aria-label="Email"
+                  >
                     <span class="label">Email</span>
                   </a>
                 </li>
               </ul>
             </section>
-            
-            </section>
+
             <!--                <section>-->
             <!--                    <form method="post" action="#">-->
             <!--                        <div class="fields">-->
